@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const Testimonials = () => {
   return (
     <>
       <h1>aca van los testimonios</h1>
@@ -8,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Testimonials;

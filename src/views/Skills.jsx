@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const Skills = () => {
   return (
     <>
       <h1>aca va un juego que muestre mis skills</h1>
@@ -8,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Skills;
