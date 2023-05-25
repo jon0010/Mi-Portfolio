@@ -1,8 +1,9 @@
 import React from "react";
 import { Home, Projects, Skills, Testimonials } from "./views/index";
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import "bootstrap/dist/css/bootstrap.css";
+import NavBar from "./components/navbar/NavBar";
+import "bootstrap/dist/css/bootstrap.min.css"; // Importa los estilos de Bootstrap
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Route, Routes } from "react-router-dom"; //para rutear en app y trabajar directo en los componentes.
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
         <Route path="/skills" element={<Skills />} />
         <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

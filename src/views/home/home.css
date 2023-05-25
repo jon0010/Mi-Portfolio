@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+}
+
+.titulo {
+  font-family: "Abel", sans-serif;
+  font-size: 8em;
+}
+
+.subtituloCont {
+  margin-left: 9em;
+  margin-bottom: 4em;
+}
+
+.subtitulo {
+  font-family: "Abel", sans-serif;
+  font-size: 5em;
+}
+
+.texto {
+  font-family: "Abel", sans-serif;
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+
+.contenedorImagen {
+  position: relative;
+  position: absolute;
+  bottom: 10em;
+  left: 65%;
+}

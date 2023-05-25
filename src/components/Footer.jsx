@@ -8,10 +8,14 @@ import Link from "@mui/material/Link";
 
 const Copyright = () => {
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography
+      style={{ textAlign: "center" }}
+      variant="body2"
+      color="text.secondary"
+    >
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" to="/">
+        Soluciones en Software
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -29,7 +33,7 @@ const Footer = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "100vh",
+          minHeight: "0vh",
         }}
       >
         <CssBaseline />
@@ -46,8 +50,9 @@ const Footer = () => {
           }}
         >
           <Container maxWidth="sm">
-            <Typography variant="body1">
-              Portfolio de Jon Nahuel Pereyra 2023 hecho con ❤️
+            <Typography variant="body1" style={{ textAlign: "center" }}>
+              Jon Nahuel Pereyra <hr /> Full Stack Developer <hr />
+              2023 hecho con ❤️
             </Typography>
             <Copyright />
           </Container>
