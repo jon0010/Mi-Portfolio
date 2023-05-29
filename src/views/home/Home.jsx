@@ -10,13 +10,10 @@ const Home = () => {
   const [showDiscordCard, setShowDiscordCard] = useState(false);
 
   const handleEmailButtonClick = () => {
-    const emailAddress = "jonnahuel78@gmail.com";
-    const subject = "";
-    const body = "";
-    const mailtoUrl = `mail-to:${emailAddress}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
+    const email = "Jonnahuel78@gmail.com";
+    const subject = "(reemplaza este texto por el asunto)";
+    const emailUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = emailUrl;
   };
 
   const handleGmailMouseEnter = () => {
@@ -124,10 +121,10 @@ const Home = () => {
               className="card2"
               onMouseEnter={handleGmailMouseEnter}
               onMouseLeave={handleGmailMouseLeave}
-              onClick={handleEmailButtonClick}
             >
               {showGmailCard && (
                 <div
+                  onClick={handleEmailButtonClick}
                   className="disctarjeta card text-bg-danger mb-0 ms-5"
                   style={{ width: "18rem" }}
                 >
@@ -138,6 +135,7 @@ const Home = () => {
                   </div>
                 </div>
               )}
+              <a href="mailto:jonnahuel78@gmail.com" className="email-link" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="Gmail"
