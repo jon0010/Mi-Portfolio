@@ -4,7 +4,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
 import "./Footer.css";
 
 const Copyright = () => {
@@ -15,9 +14,9 @@ const Copyright = () => {
       color="text.secondary"
     >
       {"Copyright © "}
-      <Link color="inherit" to="/">
-        Soluciones en Software
-      </Link>{" "}
+      <a style={{ textDecoration: "none" }} href="/">
+        JN Pereyra - Soluciones en Software
+      </a>{" "}
       {new Date().getFullYear()}
       {"."}
     </Typography>
@@ -34,7 +33,8 @@ const Footer = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "0vh",
+          justifyContent: "space-between",
+          height: "100%",
         }}
       >
         <CssBaseline />
@@ -43,7 +43,7 @@ const Footer = () => {
           sx={{
             py: 3,
             px: 2,
-            mt: "auto",
+            mt: 0,
             backgroundColor: (theme) =>
               theme.palette.mode === "light"
                 ? theme.palette.grey[200]
@@ -51,13 +51,10 @@ const Footer = () => {
           }}
         >
           <Container maxWidth="sm">
-            <Typography variant="body1" style={{ textAlign: "center" }}>
-              Jon Nahuel Pereyra
-              <span className="horizontal-line" />
-              Full Stack Developer
-              <span className="horizontal-line" />
-              2023 hecho con ❤️
-            </Typography>
+            <Typography
+              variant="body1"
+              style={{ textAlign: "center" }}
+            ></Typography>
             <Copyright />
           </Container>
         </Box>
