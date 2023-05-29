@@ -16,8 +16,8 @@ const NavBar = () => {
         </Link>
       </div>
       <div className="col-2 d-none d-md-block">
-        <Link className="nav-link active" aria-current="page" to="/skills">
-          Habilidades
+        <Link className="nav-link active" aria-current="page" to="/skillsGame">
+          Juego de Habilidades
         </Link>
       </div>
       <div className="col-2 d-none d-md-block">
@@ -49,8 +49,12 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link className="nav-link active" aria-current="page" to="/skills">
-              Habilidades
+            <Link
+              className="nav-link active"
+              aria-current="page"
+              to="/skillsGame"
+            >
+              Juego de Habilidades
             </Link>
           </li>
           <li>

@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
+import "./Footer.css";
 
 const Copyright = () => {
   return (
@@ -51,7 +52,10 @@ const Footer = () => {
         >
           <Container maxWidth="sm">
             <Typography variant="body1" style={{ textAlign: "center" }}>
-              Jon Nahuel Pereyra <hr /> Full Stack Developer <hr />
+              Jon Nahuel Pereyra
+              <span className="horizontal-line" />
+              Full Stack Developer
+              <span className="horizontal-line" />
               2023 hecho con ❤️
             </Typography>
             <Copyright />

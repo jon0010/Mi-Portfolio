@@ -1,6 +1,6 @@
 import React from "react";
-import { Home, Projects, Skills, Testimonials } from "./views/index";
-import Footer from "./components/Footer";
+import { Home, Projects, SkillsGame, Testimonials } from "./views/index";
+import Footer from "./components/footer/Footer";
 import NavBar from "./components/navbar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css"; // Importa los estilos de Bootstrap
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -13,7 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
+        <Route path="/skillsGame" element={<SkillsGame />} />
         <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
       <Footer />

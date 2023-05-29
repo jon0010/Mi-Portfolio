@@ -3,7 +3,8 @@ import React from "react";
 const Projects = () => {
   return (
     <>
-      <h1>aca van los proyectos</h1>
+      <h1>Proyectos</h1>
+      <h2>Estos son los Proyectos que he realizado</h2>
     </>
   );
 };
