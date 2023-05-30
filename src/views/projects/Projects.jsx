@@ -83,9 +83,15 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="row justify-content-evenly">
-      <h1>Proyectos</h1>
-      <div className="technologies col-4 d-flex justify-content-between flex-wrap">
+    <div className="contenedorhab row col-10 justify-content-evenly text-center mx-auto">
+      <h1 className="tituloproy mt-4">Proyectos</h1>
+      <h2 className="text-center">
+        Mi stack tecnologico se encuentra en pleno crecimiento, al momento, con
+        este conjunto de tecnologías a mi disposición, estoy preparado para
+        enfrentar cualquier desafío de desarrollo y ofrecer soluciones de
+        calidad sobresaliente.
+      </h2>
+      <div className="technologies col-10 d-flex justify-content-between flex-wrap mt-4 mb-5">
         {technologies?.map((technology, index) => (
           <Link
             key={index}
@@ -98,6 +104,53 @@ const Projects = () => {
             </button>
           </Link>
         ))}
+      </div>
+      <div className="tar-con col-5">
+        <div className="tar">
+          <div className="front-content">
+            <p>"Press Start"</p>
+          </div>
+          <div className="content fs-5">
+            <p className="heading">Proyecto individual "Press Start"</p>
+            <p>
+              Diseño y desarrollo de un aplicativo web orientado a videojuegos.
+              Algunas de las tecnologías que se utilizaron para realizar este
+              proyecto fueron - Front-end: React.js, Redux, CSS. - Back-end:
+              Node.js, Express.js, sequelize, PostgreSQL
+            </p>
+            <Link
+              to="https://pi-videogames-main-ief4.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
+              <button className="bu">IR AL PROYECTO</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="tar-con col-5">
+        <div className="tar">
+          <div className="front-content">
+            <p>"Medical Connect"</p>
+          </div>
+          <div className="content fs-5">
+            <p className="heading">Proyecto Grupal "Medical Connect"</p>
+            <p>
+              Gestión de equipo y desarrollo en la creación de una plataforma de
+              telemedicina, orientada a la comunicación a tiempo real
+              paciente-profesional de la salud. Tecnologías: - Front-end:
+              Vite.js, React.js, Redux, Bootstrap, SSE. - Back-end: Node.js,
+              Express.js, PostgreSQL, Sequelize, MercadoPagoApi, GoogleCloud.
+            </p>
+            <Link
+              to="https://medical-connect.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
+              <button className="bu">IR AL PROYECTO</button>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
