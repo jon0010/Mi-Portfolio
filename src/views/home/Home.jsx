@@ -8,6 +8,8 @@ const Home = () => {
   const [typedSubTitle, setTypedSubTitle] = useState("");
   const [showGmailCard, setShowGmailCard] = useState(false);
   const [showDiscordCard, setShowDiscordCard] = useState(false);
+  const [showLinkedInCard, setShowLinkedInCard] = useState(false);
+  const [showGithubCard, setShowGithubCard] = useState(false);
 
   const handleEmailButtonClick = () => {
     const email = "Jonnahuel78@gmail.com";
@@ -29,6 +31,22 @@ const Home = () => {
   };
 
   const handleDiscordMouseLeave = () => {
+    setShowDiscordCard(false);
+  };
+
+  const handleLinkedInMouseEnter = () => {
+    setShowDiscordCard(true);
+  };
+
+  const handleLinkedInMouseLeave = () => {
+    setShowDiscordCard(false);
+  };
+
+  const handleGithubMouseEnter = () => {
+    setShowDiscordCard(true);
+  };
+
+  const handleGithubMouseLeave = () => {
     setShowDiscordCard(false);
   };
 
@@ -85,7 +103,30 @@ const Home = () => {
               to="https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/"
               target="_blank"
             >
-              <button className="card1">
+              <button
+                className="card1"
+                onMouseEnter={handleLinkedInMouseEnter}
+                onMouseLeave={handleLinkedInMouseLeave}
+              >
+                {showLinkedInCard && (
+                  <div
+                    className="disctarjeta card text-bg-primary mb-0 ms-5"
+                    style={{ width: "18rem" }}
+                  >
+                    <div className="card-header">Visitame en LinkedIn</div>
+                    <div className="card-body">
+                      <Link
+                        to="https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/"
+                        target="_blank"
+                      >
+                        <h5 className="card-title">
+                          https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/
+                        </h5>
+                      </Link>
+                      <p className="card-text">Ampliemos nuestra red!</p>
+                    </div>
+                  </div>
+                )}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"

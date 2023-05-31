@@ -49,6 +49,7 @@ const Footer = () => {
                 ? theme.palette.grey[200]
                 : theme.palette.grey[800],
           }}
+          className="fixed-bottom"
         >
           <Container maxWidth="sm">
             <Typography

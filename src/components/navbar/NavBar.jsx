@@ -6,7 +6,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <nav className="barranav row navbar bg-body-secondary mx-0 px-0">
-      <div className="col-6">
+      <div className="col-8">
         <NavLink className="navbar-brand" to="/">
           <img src={logo} alt="logo" width="140" height="96" />
         </NavLink>
