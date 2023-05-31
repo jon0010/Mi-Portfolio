@@ -12,7 +12,7 @@ Mediante este portfolio, podrán sumergirse en un recorrido visual y detallado d
 
 ## Deploy
 
-To deploy this project run
+En la terminal, introduzca el siguiente comando
 
 ```bash
   npm run dev
@@ -35,7 +35,7 @@ To deploy this project run
 
 ## Stack de Tecnologías
 
-**Client:** React, Vite.js, Bootstrap, MaterialUI, React Icons.
+**Front-end:** React, Vite.js, Bootstrap, MaterialUI, React Icons.
 
 
 
