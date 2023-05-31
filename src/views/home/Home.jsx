@@ -3,6 +3,7 @@ import "./home.css";
 import dev from "../../assets/dev.gif";
 import { Link } from "react-router-dom";
 import discord from "../../assets/discord.jpg";
+import { Margin } from "@mui/icons-material";
 
 const Home = () => {
   const [typedSubTitle, setTypedSubTitle] = useState("");
@@ -35,19 +36,19 @@ const Home = () => {
   };
 
   const handleLinkedInMouseEnter = () => {
-    setShowDiscordCard(true);
+    setShowLinkedInCard(true);
   };
 
   const handleLinkedInMouseLeave = () => {
-    setShowDiscordCard(false);
+    setShowLinkedInCard(false);
   };
 
   const handleGithubMouseEnter = () => {
-    setShowDiscordCard(true);
+    setShowGithubCard(true);
   };
 
   const handleGithubMouseLeave = () => {
-    setShowDiscordCard(false);
+    setShowGithubCard(false);
   };
 
   useEffect(() => {
@@ -110,19 +111,17 @@ const Home = () => {
               >
                 {showLinkedInCard && (
                   <div
-                    className="disctarjeta card text-bg-primary mb-0 ms-5"
-                    style={{ width: "18rem" }}
+                    style={{
+                      width: "15rem",
+                      marginLeft: "12em",
+                      marginTop: "0em",
+                    }}
                   >
-                    <div className="card-header">Visitame en LinkedIn</div>
+                    <div className="card-header">Conectemos en LinkedIn</div>
                     <div className="card-body">
-                      <Link
-                        to="https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/"
-                        target="_blank"
-                      >
-                        <h5 className="card-title">
-                          https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/
-                        </h5>
-                      </Link>
+                      <h5 className="card-title">
+                        Dale Click en el boton azul
+                      </h5>
                       <p className="card-text">Ampliemos nuestra red!</p>
                     </div>
                   </div>
@@ -209,7 +208,28 @@ const Home = () => {
           </div>
           <div className="down">
             <Link to="https://github.com/jon0010" target="_blank">
-              <button className="card3">
+              <button
+                className="card3"
+                onMouseEnter={handleGithubMouseEnter}
+                onMouseLeave={handleGithubMouseLeave}
+              >
+                {showGithubCard && (
+                  <div
+                    style={{
+                      width: "18rem",
+                      marginLeft: "12em",
+                      marginTop: "5em",
+                    }}
+                  >
+                    <div className="card-header">Visitame en Github</div>
+                    <div className="card-body">
+                      <h5 className="card-title">
+                        Dale Click en el boton negro
+                      </h5>
+                      <p className="card-text">Mira mis trabajos anteriores</p>
+                    </div>
+                  </div>
+                )}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 30 30"
@@ -229,7 +249,7 @@ const Home = () => {
             >
               {showDiscordCard && (
                 <div
-                  className="disctarjeta mt-2 ms-5"
+                  className="disctarjeta mt-0 ms-5"
                   style={{ width: "19rem" }}
                 >
                   <Link to="https://discord.com/" target="_blank">

@@ -144,7 +144,7 @@
 }
 
 .card1:hover .linkedin {
-  fill: white;
+  fill: transparent;
 }
 
 .card2:hover {
@@ -191,10 +191,9 @@
 }
 
 .disctarjeta {
-  line-height: 1.5em;
+  line-height: 1.2em;
   font-family: "Abel", sans-serif;
   font-size: large;
   background-color: #fafcfd;
   text-decoration: none;
 }
-
