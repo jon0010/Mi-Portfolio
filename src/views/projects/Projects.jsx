@@ -20,7 +20,7 @@ import {
   SiPostman,
 } from "react-icons/si";
 import { FaReact, FaNode } from "react-icons/fa";
-import { IoLogoNodejs } from "react-icons/Io";
+import { IoLogoNodejs } from "react-icons/io";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Projects = () => {
