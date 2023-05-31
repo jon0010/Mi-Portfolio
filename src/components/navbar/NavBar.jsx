@@ -28,15 +28,6 @@ const NavBar = () => {
         <NavLink
           className="nav-link active"
           aria-current="page"
-          to="/skillsGame"
-        >
-          Juego de Habilidades
-        </NavLink>
-      </div>
-      <div className="col-2 d-none d-md-block">
-        <NavLink
-          className="nav-link active"
-          aria-current="page"
           to="/testimonials"
         >
           Testimonios
@@ -59,15 +50,6 @@ const NavBar = () => {
               to="/projects"
             >
               Proyectos
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="nav-link active"
-              aria-current="page"
-              to="/skillsGame"
-            >
-              Juego de Habilidades
             </NavLink>
           </li>
           <li>

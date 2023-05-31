@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, Projects, SkillsGame, Testimonials } from "./views/index";
+import { Home, Projects, Testimonials } from "./views/index";
 import Footer from "./components/footer/Footer";
 import NavBar from "./components/navbar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css"; // Importa los estilos de Bootstrap
@@ -13,7 +13,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/skillsGame" element={<SkillsGame />} />
         <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
       <Footer />
