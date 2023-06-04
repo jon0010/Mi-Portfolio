@@ -2,11 +2,13 @@ import React from "react";
 import alan from "../../assets/alan.jpg";
 import avatar from "../../assets/chachi.jpg";
 import chachi from "../../assets/avatar.jpg";
+import MyBluetoothComponent from "../../components/StartBluetooth";
 import "./Testimonials.css";
 
 const Testimonials = () => {
   return (
     <div>
+      <MyBluetoothComponent />
       <div className="carruseltitulo">
         <div className="carruselfondo">
           <h2>Conoce la experiencia de las personas que conocen mi trabajo</h2>
