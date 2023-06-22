@@ -215,7 +215,7 @@ const Projects = () => {
               ResponsivelyAPP.
             </p>
             <Link
-              to="https://vercel.com/jon0010/weeding-invitation"
+              to="https://weeding-invitation-iota.vercel.app/"
               target="_blank"
               style={{ textDecoration: "none", cursor: "pointer" }}
             >
