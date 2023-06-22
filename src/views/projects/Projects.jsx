@@ -197,6 +197,33 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <div className="tar-con col-5">
+        <div className="tar">
+          <div className="front-content">
+            <p>"Weeding Invitation"</p>
+          </div>
+          <div className="content fs-5">
+            <p className="heading">
+              Proyecto Freelance Responsive design "Weeding Invitation"
+            </p>
+            <p>
+              Realización de una invitación a boda para que los invitados
+              reciban toda la información necesaria sobre la asistencia y
+              detalles del evento. La invitación funciona tanto para pantallas
+              de PC, como asi tambien tablet y mobile. Tecnologías:
+              React-Vite.js, Google Maps API, MaterialUI, Bootstrap,
+              ResponsivelyAPP.
+            </p>
+            <Link
+              to="https://vercel.com/jon0010/weeding-invitation"
+              target="_blank"
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
+              <button className="bu">IR AL PROYECTO</button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
