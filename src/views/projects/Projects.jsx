@@ -131,10 +131,10 @@ const Projects = () => {
     <div className="contenedorhab row col-10 justify-content-evenly text-center mx-auto">
       <h1 className="tituloproy my-4">Proyectos</h1>
       <h2 className="text-center">
-        Mi stack tecnologico se encuentra en pleno crecimiento, al momento, con
-        este conjunto de tecnologías a mi disposición, estoy preparado para
-        enfrentar cualquier desafío de desarrollo y ofrecer soluciones de
-        calidad sobresaliente.
+        Mi stack tecnológico se encuentra en pleno crecimiento. Al momento,
+        cuento con este conjunto de tecnologías a mi disposición y estoy
+        preparado para enfrentar cualquier desafío de desarrollo y ofrecer
+        soluciones de calidad sobresaliente.
       </h2>
       <div className="technologies col-10 d-flex justify-content-between flex-wrap mt-4 mb-5">
         {technologies?.map((Technology, index) => (
@@ -150,7 +150,7 @@ const Projects = () => {
           </Link>
         ))}
       </div>
-      <div className="tar-con col-5">
+      <div className="tar-con col-12 col-sm-5">
         <div className="tar">
           <div className="front-content">
             <p>"Press Start"</p>
@@ -160,8 +160,11 @@ const Projects = () => {
             <p>
               Diseño y desarrollo de un aplicativo web orientado a videojuegos.
               Algunas de las tecnologías que se utilizaron para realizar este
-              proyecto fueron - Front-end: React.js, Redux, CSS. - Back-end:
-              Node.js, Express.js, sequelize, PostgreSQL
+              proyecto fueron:
+            </p>
+            <p>
+              - Front-end: React.js, Redux, CSS.
+              <br />- Back-end: Node.js, Express.js, Sequelize, PostgreSQL
             </p>
             <Link
               to="https://pi-videogames-main-ief4.vercel.app/"
@@ -173,7 +176,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="tar-con col-5">
+      <div className="tar-con col-12 col-sm-5">
         <div className="tar">
           <div className="front-content">
             <p>"Medical Connect"</p>
@@ -183,9 +186,12 @@ const Projects = () => {
             <p>
               Gestión de equipo y desarrollo en la creación de una plataforma de
               telemedicina, orientada a la comunicación a tiempo real
-              paciente-profesional de la salud. Tecnologías: - Front-end:
-              Vite.js, React.js, Redux, Bootstrap, SSE. - Back-end: Node.js,
-              Express.js, PostgreSQL, Sequelize, MercadoPagoApi, GoogleCloud.
+              paciente-profesional de la salud. Tecnologías utilizadas:
+            </p>
+            <p>
+              - Front-end: Vite.js, React.js, Redux, Bootstrap, SSE.
+              <br />- Back-end: Node.js, Express.js, PostgreSQL, Sequelize,
+              MercadoPagoApi, GoogleCloud.
             </p>
             <Link
               to="https://medical-connect.vercel.app/"
@@ -197,7 +203,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="tar-con col-5">
+      <div className="tar-con col-12 col-sm-5">
         <div className="tar">
           <div className="front-content">
             <p>"Weeding Invitation"</p>
@@ -210,7 +216,9 @@ const Projects = () => {
               Realización de una invitación a boda para que los invitados
               reciban toda la información necesaria sobre la asistencia y
               detalles del evento. La invitación funciona tanto para pantallas
-              de PC, como asi tambien tablet y mobile. Tecnologías:
+              de PC como para tablet y móviles. Tecnologías utilizadas:
+            </p>
+            <p>
               React-Vite.js, Google Maps API, MaterialUI, Bootstrap,
               ResponsivelyAPP.
             </p>

@@ -5,41 +5,17 @@
   padding: 0;
 }
 
-.container-fluid {
-  height: 100vh;
-  width: 100vw;
-}
-
 .titulo {
   font-family: "Abel", sans-serif;
-  font-size: 7.5em;
-}
-
-.subtituloCont {
-  margin-left: 9em;
-  margin-bottom: 4em;
+  font-size: 1.9em;
 }
 
 .subtitulo {
   font-family: "Abel", sans-serif;
-  font-size: 5em;
 }
 
 .texto {
   font-family: "Abel", sans-serif;
-  font-size: 1.5em;
-  margin-left: 1em;
-}
-
-.contenedorImagen {
-  position: relative;
-  position: absolute;
-  bottom: 10em;
-  left: 65%;
-}
-
-.img-full {
-  width: 30vw;
 }
 
 .bg-custom {
@@ -193,7 +169,6 @@
 .disctarjeta {
   line-height: 1.2em;
   font-family: "Abel", sans-serif;
-  font-size: large;
   background-color: #fafcfd;
   text-decoration: none;
 }

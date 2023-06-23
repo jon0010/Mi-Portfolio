@@ -3,7 +3,6 @@ import "./home.css";
 import dev from "../../assets/dev.gif";
 import { Link } from "react-router-dom";
 import discord from "../../assets/discord.jpg";
-import { Margin } from "@mui/icons-material";
 
 const Home = () => {
   const [typedSubTitle, setTypedSubTitle] = useState("");
@@ -76,17 +75,17 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-custom row p-0 m-0 pt-2 mt-0">
-      <div className="col-7">
-        <h1 className="titulo text-dark text-center my-5 py-5">
+    <div className="bg-custom row p-0 m-0 pt-2 mt-0 p-0">
+      <div className="col-lg-7 col-sm-12 fs-3">
+        <h1 className="titulo text-dark text-center my-3 py-5">
           Jon Nahuel Pereyra
         </h1>
-        <div className="subtituloCont ms-1">
-          <h2 className="subtitulo text-center text-dark">
+        <div className="ms-1">
+          <h2 className="subtitulo text-center text-dark fs-1">
             {typedSubTitle || <span>&nbsp;</span>}
           </h2>
         </div>
-        <p className="texto text-dark text-center texto p-5">
+        <p className="texto text-dark text-center p-5">
           Hola, soy un desarrollador Fullstack con un background destacado en
           liderazgo, organización y capacitación en equipos a gran escala.
           Además, cuento con experiencia en la creación de planes integrales en
@@ -96,9 +95,9 @@ const Home = () => {
           basados en el lenguaje JavaScript.
         </p>
       </div>
-      <div className="col-5 text-center pt-5">
-        <img className="img-full" src={dev} alt="img" />
-        <div className="circleBtn mt-5 ms-5">
+      <div className="col-lg-5 col-sm-12 text-center pt-5">
+        <img className="img-fluid" src={dev} alt="img" />
+        <div className="circleBtn mt-5 ms-0">
           <div className="up">
             <Link
               to="https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/"
@@ -113,16 +112,18 @@ const Home = () => {
                   <div
                     style={{
                       width: "15rem",
-                      marginLeft: "12em",
                       marginTop: "0em",
+                      position: "absolute",
                     }}
                   >
-                    <div className="card-header">Conectemos en LinkedIn</div>
-                    <div className="card-body">
-                      <h5 className="card-title">
-                        Dale Click en el boton azul
-                      </h5>
-                      <p className="card-text">Ampliemos nuestra red!</p>
+                    <div style={{ marginTop: "12em" }}>
+                      <div className="card-header">Conectemos en LinkedIn</div>
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          Dale Click en el boton azul
+                        </h5>
+                        <p className="card-text">Ampliemos nuestra red!</p>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -166,12 +167,16 @@ const Home = () => {
                 <div
                   onClick={handleEmailButtonClick}
                   className="disctarjeta card text-bg-danger mb-0 ms-5"
-                  style={{ width: "18rem" }}
+                  style={{ width: "9rem" }}
                 >
-                  <div className="card-header">Contactame por E-mail</div>
-                  <div className="card-body">
-                    <h5 className="card-title">Jonnahuel78@gmail.com</h5>
-                    <p className="card-text">Estoy disponible todos los dias</p>
+                  <div style={{ marginTop: "0em" }}>
+                    <div className="card-header">Contactame por E-mail</div>
+                    <div className="card-body">
+                      <h5 className="card-title">Jonnahuel78@gmail.com</h5>
+                      <p className="card-text">
+                        Estoy disponible todos los dias
+                      </p>
+                    </div>
                   </div>
                 </div>
               )}
@@ -217,8 +222,7 @@ const Home = () => {
                   <div
                     style={{
                       width: "18rem",
-                      marginLeft: "12em",
-                      marginTop: "5em",
+                      marginTop: "7em",
                     }}
                   >
                     <div className="card-header">Visitame en Github</div>
@@ -250,7 +254,7 @@ const Home = () => {
               {showDiscordCard && (
                 <div
                   className="disctarjeta mt-0 ms-5"
-                  style={{ width: "19rem" }}
+                  style={{ width: "10rem" }}
                 >
                   <Link to="https://discord.com/" target="_blank">
                     <img src={discord} className="card-img-top" alt="card" />

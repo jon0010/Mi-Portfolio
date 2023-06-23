@@ -2,8 +2,11 @@
 
 .barranav {
   font-family: "Abel", sans-serif;
-  font-size: large;
   color: #000;
+}
+
+.navbar .row {
+  align-items: center;
 }
 
 .botonCV {
