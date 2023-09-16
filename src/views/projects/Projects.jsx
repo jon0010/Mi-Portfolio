@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 import "./Projects.css";
 import {
   SiJavascript,
+  SiTypescript,
+  SiVite,
   SiRedux,
   SiNextdotjs,
   SiPostgresql,
+  SiMysql,
+  SiMongodb,
   SiSequelize,
+  SiMongoose,
   SiVercel,
   SiRender,
   SiGit,
@@ -31,6 +36,11 @@ const Projects = () => {
       Icon: <SiJavascript />,
     },
     {
+      name: "Typescript",
+      documentationUrl: "https://www.typescriptlang.org/docs/",
+      Icon: <SiTypescript />,
+    },
+    {
       name: "React.js",
       documentationUrl: "https://es.reactjs.org/",
       Icon: <FaReact />,
@@ -39,6 +49,11 @@ const Projects = () => {
       name: "Redux.js",
       documentationUrl: "https://redux.js.org/",
       Icon: <SiRedux />,
+    },
+    {
+      name: "Vite.js",
+      documentationUrl: "https://vitejs.dev/guide/",
+      Icon: <SiVite />,
     },
     {
       name: "Next.js",
@@ -61,9 +76,24 @@ const Projects = () => {
       Icon: <SiPostgresql />,
     },
     {
+      name: "MySQL",
+      documentationUrl: "https://dev.mysql.com/doc/",
+      Icon: <SiMysql />,
+    },
+    {
+      name: "MongoDB",
+      documentationUrl: "https://www.mongodb.com/docs/",
+      Icon: <SiMongodb />,
+    },
+    {
       name: "Sequelize",
       documentationUrl: "https://sequelize.org/",
       Icon: <SiSequelize />,
+    },
+    {
+      name: "Mongoose",
+      documentationUrl: "https://mongoosejs.com/docs/guide.html",
+      Icon: <SiMongoose />,
     },
     {
       name: "Vercel",
@@ -224,6 +254,33 @@ const Projects = () => {
             </p>
             <Link
               to="https://weeding-invitation-iota.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
+              <button className="bu">IR AL PROYECTO</button>
+            </Link>
+          </div>
+        </div>
+        <div className="tar">
+          <div className="front-content">
+            <p>"BA multiplica 2.0"</p>
+          </div>
+          <div className="content fs-5">
+            <p className="heading">Proyecto individual "BA multiplica 2.0"</p>
+            <p>
+              Diseño y desarrollo de un aplicativo web orientado a la entrega de
+              tareas obligatorias, videos tutoriales de diseño web y un programa
+              donde podes evaluar flyers siguiendo criterios y ver tu evaluación
+              en una seccion de historial. Las tecnologías para desarrollar este
+              sitio son:
+            </p>
+            <p>
+              - Front-end: Vite.js, Typescript, Bootstrap, MaterialUI.
+              <br />- Back-end: Typescript, Node.js, Express.js, Mongoose,
+              MongoDB
+            </p>
+            <Link
+              to="https://b-amultiplica2-0-homework.vercel.app/"
               target="_blank"
               style={{ textDecoration: "none", cursor: "pointer" }}
             >
