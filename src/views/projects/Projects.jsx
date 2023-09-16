@@ -11,7 +11,6 @@ import {
   SiMysql,
   SiMongodb,
   SiSequelize,
-  SiMongoose,
   SiVercel,
   SiRender,
   SiGit,
@@ -89,11 +88,6 @@ const Projects = () => {
       name: "Sequelize",
       documentationUrl: "https://sequelize.org/",
       Icon: <SiSequelize />,
-    },
-    {
-      name: "Mongoose",
-      documentationUrl: "https://mongoosejs.com/docs/guide.html",
-      Icon: <SiMongoose />,
     },
     {
       name: "Vercel",
@@ -261,6 +255,8 @@ const Projects = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="tar-con col-12 col-sm-5">
         <div className="tar">
           <div className="front-content">
             <p>"BA multiplica 2.0"</p>
