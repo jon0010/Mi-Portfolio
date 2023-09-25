@@ -22,7 +22,7 @@ const NavBar = () => {
             />
           </NavLink>
           <NavLink
-            to="https://drive.google.com/uc?export=download&id=1iaRijdpan3xyF4f2Kl80CZ63pqwX1cIm"
+            to="https://drive.google.com/uc?export=download&id=1GU67LFRx6Bt6omQq8ipgptBy4IBcYwVM"
             target="_blank"
           >
             <button className="botonCV">
