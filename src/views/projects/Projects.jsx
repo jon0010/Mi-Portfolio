@@ -285,6 +285,36 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <div className="tar-con col-12 col-sm-5">
+        <div className="tar">
+          <div className="front-content">
+            <p>"Dice App"</p>
+          </div>
+          <div className="content fs-5">
+            <p className="heading">Proyecto individual "Dice App"</p>
+            <p>
+              Diseño y desarrollo de un sitio web orientado al entretenimiento.
+              Las acciones que podes realizar son: registrarte, iniciar sesion,
+              jugar a adivinar los dados, jugar contra Dice Bot en un desafío
+              1vs1 y en la seccion Perfil, ver el historial de tus jugadas con
+              la posibilidad de borrar lógicamente jugadas anteriores. Las
+              tecnologías para desarrollar este sitio son:
+            </p>
+            <p>
+              - Front-end: Next.js, Typescript, Bootstrap, MaterialUI, Canva.
+              <br />- Back-end: Typescript, Node.js, Express.js, Sequelize,
+              MySQL
+            </p>
+            <Link
+              to="https://dice-app-nu.vercel.app"
+              target="_blank"
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
+              <button className="bu">IR AL PROYECTO</button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
