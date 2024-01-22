@@ -609,9 +609,9 @@ const Home = () => {
         </h1>
         <div className="row text-center">
           <div className="col-sm-12 col-md-8 text-start d-flex align-items-center justify-content-center">
-            Me llamo jon (si así es como se escribe 😌). Empecé en la
-            programación hace poco más de dos años. Actualmente llevo más de un
-            año trabajando en modalidad freelance.
+            Me llamo jon nahuel pereyra (si así es como se escribe, jon 😌).
+            Empecé en la programación hace poco más de dos años. Actualmente
+            llevo más de un año trabajando en modalidad freelance.
             <br />
             <br />
             Algunos de mis éxitos incluyen formar el equipo de desarrollo de
