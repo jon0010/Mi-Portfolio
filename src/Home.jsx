@@ -9,7 +9,7 @@ import {
   FaRegSmileWink,
 } from "react-icons/fa";
 import { TbBriefcase, TbBrandReactNative, TbWorldWww } from "react-icons/tb";
-import { IoLogoNodejs } from "react-icons/io";
+import { IoLogoNodejs, IoLogoWhatsapp } from "react-icons/io";
 import { AiFillThunderbolt } from "react-icons/ai";
 import Timeline from "./components/timeline/Timeline";
 import {
@@ -364,7 +364,7 @@ const Home = () => {
                 e.target.style.transform = "scale(1)";
               }}
             >
-              Disponible para trabajar ✅
+              Disponible para trabajar <IoLogoWhatsapp className="fs-4 mb-1" />
             </button>
           </div>
         </div>
@@ -375,10 +375,8 @@ const Home = () => {
             <span style={{ color: "orange" }}>
               Desarrollador full stack y diseñador gráfico digital.
             </span>{" "}
-            <span className="text-danger">
-              De Buenos Aires, Argentina.&nbsp;
-            </span>
-            <span className="text-info">
+            <span>De Buenos Aires, Argentina.&nbsp;</span>
+            <span>
               Especializado en crear soluciones en tecnología a medida.
             </span>
           </p>

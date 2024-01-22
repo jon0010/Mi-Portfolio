@@ -26,7 +26,7 @@ const Navbar2 = () => {
             src={logo}
             alt="Logo"
             width={100}
-            style={{ borderRadius: "22px", zIndex: "-50" }}
+            style={{ borderRadius: "22px", zIndex: "-50", cursor: "default" }}
           />
         </NavLink>
         <button
