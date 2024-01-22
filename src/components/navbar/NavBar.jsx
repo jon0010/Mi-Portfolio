@@ -1,90 +1,74 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import logo2 from "../../assets/logo2.png";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
 
-const NavBar = () => {
-  const isSmallScreen = window.innerWidth < 768; // Tamaño de pantalla para el breakpoint sm (según Bootstrap)
-  const logoWidth = isSmallScreen ? "30" : "140";
-  const logoHeight = isSmallScreen ? "20" : "96";
+const Navbar2 = () => {
+  const handleScrollExperience = () => {
+    const offset = 700;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  };
+
+  const handleScrollProject = () => {
+    const offset = 1636;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  };
+
+  const handleScrollAboutMe = () => {
+    const offset = 3100;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  };
 
   return (
-    <div className="container-fluid p-0">
-      <nav className="barranav row navbar bg-body-secondary mx-0 px-0">
-        <div className="d-flex flex-row align-items-center col-sm-12 col-md-6">
-          <NavLink className="navbar-brand me-sm-4" to="/">
-            <img
-              src={isSmallScreen ? logo2 : logo}
-              alt="logo"
-              width={logoWidth}
-              height={logoHeight}
-            />
-          </NavLink>
-          <NavLink
-            to="https://drive.google.com/uc?export=download&id=18NnC2xOBSKrOLJNl6bBlgmnCysXHNI1d"
-            target="_blank"
+    <nav className="navbar navbar-expand-lg row px-4 fw-semibold py-3 fs-5 PORTFOLIO_FONT_4">
+      <div className="container-fluid">
+        <NavLink to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            width={100}
+            style={{ borderRadius: "22px", zIndex: "-50" }}
+          />
+        </NavLink>
+        <button
+          className="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="collapse navbar-collapse ms-md-auto me-md-2 flex-md-row-reverse justify-content-md-start"
+          id="navbarNav"
+        >
+          <button
+            id="nav-link-sobremi"
+            className="nav-link text-start text-md-end text-white my-2 me-5"
+            onClick={handleScrollAboutMe}
           >
-            <button className="botonCV">
-              <div className="BOTONCV fs-4">Descargar CV</div>
-            </button>
-          </NavLink>
-          <div className="ms-4 d-md-none">
-            <div className="btn-group">
-              <button
-                className="btn btn-secondary dropdown-toggle bi bi-list"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Menu
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <NavLink
-                    className="dropdown-item"
-                    aria-current="page"
-                    to="/projects"
-                  >
-                    Proyectos
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    className="dropdown-item"
-                    aria-current="page"
-                    to="/testimonials"
-                  >
-                    Testimonios
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          </div>
+            Sobre mí
+          </button>
+          <button
+            id="nav-link-proyectos"
+            className="nav-link text-start text-md-end text-white my-2 me-5"
+            onClick={handleScrollProject}
+          >
+            Proyectos
+          </button>
+          <button
+            id="nav-link-experiencia"
+            className="nav-link text-start text-md-end text-white my-2 me-5"
+            onClick={handleScrollExperience}
+          >
+            Experiencia
+          </button>
         </div>
-        <div className="navbar-row row align-items-center col-md-6 d-none d-md-flex justify-content-end me-0">
-          <div className="col-3">
-            <NavLink
-              className="nav-link active fs-4"
-              aria-current="page"
-              to="/projects"
-            >
-              Proyectos
-            </NavLink>
-          </div>
-          <div className="col-3">
-            <NavLink
-              className="nav-link active fs-4"
-              aria-current="page"
-              to="/testimonials"
-            >
-              Testimonios
-            </NavLink>
-          </div>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar2;

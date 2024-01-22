@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@100&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@100&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  width: 100vw;
+  background: linear-gradient(to top, black 0%, black 40%, #39127d 80%);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.PORTFOLIO_FONT_1 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Abel", Roboto, Ubuntu, "Open Sans", sans-serif;
+}
+
+.PORTFOLIO_FONT_2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 3.6em;
+  font-style: normal;
+}
+
+.PORTFOLIO_FONT_3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.PORTFOLIO_FONT_4 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 12em;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin: 20px 0;
+}
+
+.timeline-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #ffaa00;
+  border-radius: 50%;
+  margin-right: 16px;
+  z-index: 1;
+}
+
+.timeline-line {
+  position: absolute;
+  background-color: #3498db;
+  width: 1px;
+  height: 150%;
+  left: 9px;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.timeline-date {
+  color: #ffaa00;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.timeline-event {
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 4px;
+}
