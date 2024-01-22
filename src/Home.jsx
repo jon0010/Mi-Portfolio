@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GrLinkedin } from "react-icons/gr";
 import { BsGithub } from "react-icons/bs";
 import { MdOutgoingMail } from "react-icons/md";
@@ -38,8 +38,65 @@ import {
 import { Link } from "react-router-dom";
 import clinicaltech from "./assets/clinicaltech.png";
 import industriaGallay from "./assets/industriaGallay.png";
+import "./home.css";
 
 const Home = () => {
+  const [text, setText] = useState("Hola!");
+  const [cursorVisible, setCursorVisible] = useState(true);
+
+  useEffect(() => {
+    const phrases = [
+      "Soy Jon",
+      "Bienvenido",
+      "Soy Programador",
+      "Bienvenida",
+      "Soy Diseñador",
+    ];
+    let currentPhraseIndex = 0;
+    let charIndex = 0;
+
+    const typeWriter = () => {
+      const currentPhrase = phrases[currentPhraseIndex];
+      const currentText = currentPhrase.slice(0, charIndex);
+
+      setText(currentText);
+
+      if (charIndex < currentPhrase.length) {
+        charIndex += 1;
+        setTimeout(typeWriter, 100);
+      } else {
+        setTimeout(() => eraseText(), 2000);
+      }
+    };
+
+    const eraseText = () => {
+      const currentPhrase = phrases[currentPhraseIndex];
+      const currentText = currentPhrase.slice(0, charIndex);
+
+      setText(currentText);
+
+      if (charIndex > 0) {
+        charIndex -= 1;
+        setTimeout(eraseText, 50);
+      } else {
+        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+        setTimeout(typeWriter, 500);
+      }
+    };
+
+    const cursorBlink = () => {
+      setCursorVisible((prev) => !prev);
+      setTimeout(cursorBlink, 500);
+    };
+
+    typeWriter();
+    cursorBlink();
+
+    return () => {
+      clearTimeout();
+    };
+  }, []);
+
   const pillProps = [
     {
       name: "JavaScript",
@@ -272,13 +329,19 @@ const Home = () => {
           style={{ borderRadius: "50%", marginBottom: "28px" }}
         />
         <div className="row">
-          <div className={`col-12 col-sm-8`}>
+          <div className={`col-12 col-sm-10`}>
             <h1
+              id="titulo"
               className={`titulo text-white text-start PORTFOLIO_FONT_2 ${
                 isBigScreen ? "" : "fs-1"
               }`}
             >
-              Hola! soy jon
+              <span>Hola!&nbsp;</span>
+              <span>{text}</span>
+              <span
+                id="cursor"
+                style={{ visibility: cursorVisible ? "visible" : "hidden" }}
+              ></span>
             </h1>
           </div>
           <div className="col-12 col-md-8">

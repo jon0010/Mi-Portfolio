@@ -4,17 +4,17 @@ import { NavLink } from "react-router-dom";
 
 const Navbar2 = () => {
   const handleScrollExperience = () => {
-    const offset = 700;
+    const offset = 800;
     window.scrollTo({ top: offset, behavior: "smooth" });
   };
 
   const handleScrollProject = () => {
-    const offset = 1636;
+    const offset = 1836;
     window.scrollTo({ top: offset, behavior: "smooth" });
   };
 
   const handleScrollAboutMe = () => {
-    const offset = 3100;
+    const offset = 4200;
     window.scrollTo({ top: offset, behavior: "smooth" });
   };
 
