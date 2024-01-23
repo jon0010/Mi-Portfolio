@@ -600,13 +600,17 @@ const Home = () => {
           </a>
         </button>
       </div>
+      <hr className="border mx-auto mb-5" width={"65%"}/>
       <div className="col-12 col-md-8 px-4 mx-auto text-light PORTFOLIO_FONT_4 mb-5">
         <h1 className="PORTFOLIO_FONT_3">
           <FaRegSmileWink className="me-3 mb-2" />
           Sobre mi
         </h1>
         <div className="row text-center">
-          <div className="col-sm-12 col-md-8 text-start d-flex align-items-center justify-content-center">
+          <div
+            className="col-sm-12 col-md-8 text-start d-flex align-items-center justify-content-center"
+            style={{ lineHeight: "32px" }}
+          >
             Me llamo jon nahuel pereyra (si así es como se escribe, jon 😌).
             Empecé en la programación hace poco más de dos años. Actualmente
             llevo más de un año trabajando en modalidad freelance.

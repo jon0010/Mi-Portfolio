@@ -3,19 +3,23 @@ import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar2 = () => {
-  const handleScrollExperience = () => {
-    const offset = 800;
+  const handleScroll = (offset) => {
     window.scrollTo({ top: offset, behavior: "smooth" });
+  };
+
+  const handleScrollExperience = () => {
+    const offset = window.innerWidth >= 768 ? 700 : 1100;
+    handleScroll(offset);
   };
 
   const handleScrollProject = () => {
-    const offset = 1836;
-    window.scrollTo({ top: offset, behavior: "smooth" });
+    const offset = window.innerWidth >= 768 ? 1556 : 2400;
+    handleScroll(offset);
   };
 
   const handleScrollAboutMe = () => {
-    const offset = 4200;
-    window.scrollTo({ top: offset, behavior: "smooth" });
+    const offset = window.innerWidth >= 768 ? 4200 : 4150;
+    handleScroll(offset);
   };
 
   return (
@@ -45,21 +49,18 @@ const Navbar2 = () => {
           id="navbarNav"
         >
           <button
-            id="nav-link-sobremi"
             className="nav-link text-start text-md-end text-white my-2 me-5"
             onClick={handleScrollAboutMe}
           >
             Sobre mí
           </button>
           <button
-            id="nav-link-proyectos"
             className="nav-link text-start text-md-end text-white my-2 me-5"
             onClick={handleScrollProject}
           >
             Proyectos
           </button>
           <button
-            id="nav-link-experiencia"
             className="nav-link text-start text-md-end text-white my-2 me-5"
             onClick={handleScrollExperience}
           >
