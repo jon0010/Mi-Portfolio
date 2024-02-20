@@ -505,7 +505,7 @@ const Home = () => {
           style={{ padding: "8px" }}
         >
           <a
-            href="https://clinicaltechsrl.meteorapp.com"
+            href="https://clinicaltechsrl.com.ar/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "inherit" }}
@@ -600,7 +600,7 @@ const Home = () => {
           </a>
         </button>
       </div>
-      <hr className="border mx-auto mb-5" width={"65%"}/>
+      <hr className="border mx-auto mb-5" width={"65%"} />
       <div className="col-12 col-md-8 px-4 mx-auto text-light PORTFOLIO_FONT_4 mb-5">
         <h1 className="PORTFOLIO_FONT_3">
           <FaRegSmileWink className="me-3 mb-2" />
