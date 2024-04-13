@@ -7,6 +7,7 @@ import {
   FaReact,
   FaNode,
   FaRegSmileWink,
+  FaDocker,
 } from "react-icons/fa";
 import { TbBriefcase, TbBrandReactNative, TbWorldWww } from "react-icons/tb";
 import { IoLogoNodejs, IoLogoWhatsapp } from "react-icons/io";
@@ -34,10 +35,14 @@ import {
   SiMatrix,
   SiPostman,
   SiMeteor,
+  SiPuppeteer,
+  SiNestjs,
 } from "react-icons/si";
+import { DiNginx } from "react-icons/di";
 import { Link } from "react-router-dom";
 import clinicaltech from "./assets/clinicaltech.png";
 import industriaGallay from "./assets/industriaGallay.png";
+import proximarket from "../src/assets/proximarket.png";
 import "./home.css";
 
 const Home = () => {
@@ -281,9 +286,42 @@ const Home = () => {
       backgroundColor: "#CF0D0D",
       color: "white",
     },
+    {
+      name: "Docker",
+      documentationUrl: "https://www.docker.com/",
+      Icon: <FaDocker />,
+      backgroundColor: "#257ACA",
+      color: "white",
+    },
+    {
+      name: "NGINX",
+      documentationUrl: "https://www.nginx.com/",
+      Icon: <DiNginx />,
+      backgroundColor: "#429542",
+      color: "white",
+    },
+    {
+      name: "Puppeteer",
+      documentationUrl: "https://pptr.dev/",
+      Icon: <SiPuppeteer />,
+      backgroundColor: "#31B180",
+      color: "#043120",
+    },
+    {
+      name: "Nest.js",
+      documentationUrl: "https://nestjs.com/",
+      Icon: <SiNestjs />,
+      backgroundColor: "#FB0E35",
+      color: "white",
+    },
   ];
 
   const eventsData = [
+    {
+      date: "15/01/2023 → DESARROLLADOR FULL STACK EN PROXIMARKET",
+      event:
+        "Planificación, diseño y desarrollo de una plataforma con motor de busqueda de productos en tiempo real",
+    },
     {
       date: "25/10/2023 - 05/01/2024 → DESARROLLADOR FULL STACK EN CLINICALTECH SRL",
       event:
@@ -293,11 +331,6 @@ const Home = () => {
       date: "11/06/2023 - 05/10/2023 → DOCENTE DE DISEÑO GRÁFICO DIGITAL Y GESTIÓN DE PROYECTOS",
       event:
         "Instruí a +100 alumnos dando clases sobre diseño gráfico digital y uso de herramientas gratuitas de diseño como Gimp e Inkscape, programa impulsado por el gobierno de la ciudad de buenos aires y la universidad tecnológica nacional.",
-    },
-    {
-      date: "02/03/2023 - 25/09/2023 → DESARROLLADOR FULL STACK EN INDUSTRIA GALLAY",
-      event:
-        "Realice el diseño y desarrollo de un sitio web enfocado a la venta de cuchillos y articulos de pesca para una PyME ubicada en Virrey del pino, Buenos Aires.",
     },
   ];
 
@@ -519,14 +552,13 @@ const Home = () => {
       </div>
       <div className="col-12 col-md-8 px-4 mx-auto text-light mb-5">
         <h2 className="fs-3 mt-5" style={{ color: "#ffaa00" }}>
-          INDUSTRIA GALLAY - Un E-commerce para la venta de artículos de pesca
+          PROXIMARKET APP - Un motor de busqueda para la organización de compras
+          online
         </h2>
         <p className="PORTFOLIO_FONT_4 mt-3">
-          Este sitio cuenta con un catálogo de productos con filtros y
-          ordenamiento, carrito de compras y dashboard donde el administrador
-          podrá ver el estado en tiempo real de las ventas, usuarios (con
-          posibilidad de desactivarlos) y video interactivo en el header del
-          sitio.
+          Este sitio cuenta con un motor de busqueda basado en puppeteer para
+          obtener datos en tiempo real de productos con filtros y ordenamiento,
+          y video interactivo en el header del sitio.
         </p>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -534,18 +566,17 @@ const Home = () => {
             .filter((pill) =>
               [
                 "Typescript",
-                "MaterialUI",
-                "Bootstrap",
-                "ThunderClient",
+                "Next.js",
+                "Node.js",
+                "MySQL",
+                "Vercel",
                 "GitHub",
                 "Git",
-                "Render",
-                "Vercel",
-                "MongoDB",
-                "Express.js",
-                "Node.js",
-                "Vite.js",
-                "React.js",
+                "AWS",
+                "Docker",
+                "NGINX",
+                "Puppeteer",
+                "Nest.js",
               ].some((tech) => pill.name.includes(tech))
             )
             .map((pill, index) => (
@@ -578,8 +609,8 @@ const Home = () => {
 
         <img
           className="mt-4 rounded-2 border border-info img-fluid"
-          src={industriaGallay}
-          alt="industria gallay"
+          src={proximarket}
+          alt="proximarket_img"
           width={1000}
         />
         <br />
@@ -588,7 +619,7 @@ const Home = () => {
           style={{ padding: "8px" }}
         >
           <a
-            href="https://www.industriagallay.com.ar"
+            href="https://proxi-market.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "inherit" }}
