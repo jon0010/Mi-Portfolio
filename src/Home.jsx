@@ -318,7 +318,7 @@ const Home = () => {
 
   const eventsData = [
     {
-      date: "15/01/2023 → DESARROLLADOR FULL STACK EN PROXIMARKET",
+      date: "15/01/2024 → DESARROLLADOR FULL STACK EN PROXIMARKET",
       event:
         "Planificación, diseño y desarrollo de una plataforma con motor de busqueda de productos en tiempo real",
     },
