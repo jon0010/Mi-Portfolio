@@ -41,7 +41,6 @@ import {
 import { DiNginx } from "react-icons/di";
 import { Link } from "react-router-dom";
 import clinicaltech from "./assets/clinicaltech.png";
-import industriaGallay from "./assets/industriaGallay.png";
 import proximarket from "../src/assets/proximarket.png";
 import "./home.css";
 
@@ -318,14 +317,19 @@ const Home = () => {
 
   const eventsData = [
     {
-      date: "15/01/2024 → DESARROLLADOR FULL STACK EN PROXIMARKET",
+      date: "02/05/2024 - actualmente → DESARROLLADOR BACK-END EN GRAVITAD",
       event:
-        "Planificación, diseño y desarrollo de una plataforma con motor de busqueda de productos en tiempo real",
+        "Empresa ubicada en españa con financiamiento de la Union Europea y el gobierno de españa. Desarrollo de diversos sistemas multiplataforma y planificación/desarrollo de software innovador para uso interno de la empresa.",
     },
     {
-      date: "25/10/2023 - 05/01/2024 → DESARROLLADOR FULL STACK EN CLINICALTECH SRL",
+      date: "15/01/2024 - 05/07/2024 → PROXIMARKET, DESARROLLADOR FULL STACK",
       event:
-        "Realice la asesoría al cliente, planificación, diseño y desarrollo de un sitio web autogestionable enfocado a la venta de insumos hospitalarios para una empresa ubicada en Merlo, Buenos Aires,",
+        "Planificación, diseño y desarrollo de una plataforma con motor de busqueda de productos en tiempo real.",
+    },
+    {
+      date: "25/10/2023 - 05/01/2024 → CLINICALTECH SRL - DESARROLLADOR FULL STACK",
+      event:
+        "Realice la asesoría al cliente, planificación, diseño y desarrollo de un sitio web autogestionable enfocado a la venta de insumos hospitalarios para una empresa ubicada en Merlo, Buenos Aires.",
     },
     {
       date: "11/06/2023 - 05/10/2023 → DOCENTE DE DISEÑO GRÁFICO DIGITAL Y GESTIÓN DE PROYECTOS",
@@ -348,7 +352,7 @@ const Home = () => {
   )}`;
 
   const googleDriveLink =
-    "https://drive.google.com/uc?export=download&id=166Nb51DOGqB91dDmpQlxaTf0GqCimcUR";
+    "https://drive.google.com/uc?export=download&id=1w1oe6HksHJq9ubeWnpzLHQB65LhkgqW6";
 
   const isBigScreen = window.innerWidth >= 576;
 
@@ -379,9 +383,9 @@ const Home = () => {
           </div>
           <div className="col-12 col-md-8">
             <button
-              className="rounded-pill p-1 mt-3 border border-success border-3 fw-semibold"
+              className="rounded-pill p-1 mt-3 border border-danger border-3 fw-semibold"
               style={{
-                color: "#2D9729",
+                color: "red",
                 backgroundColor: "aliceblue",
                 transition: "transform 0.3s ease-in-out",
                 cursor: "pointer",
@@ -397,14 +401,14 @@ const Home = () => {
                 e.target.style.transform = "scale(1)";
               }}
             >
-              Disponible para trabajar <IoLogoWhatsapp className="fs-4 mb-1" />
+              Actualmente trabajando... <IoLogoWhatsapp className="fs-4 mb-1" />
             </button>
           </div>
         </div>
 
         <div className="ms-1">
           <p className="texto text-white text-start mt-5 fs-2">
-            +1 año de experiencia laboral.{" "}
+            +2 años de experiencia laboral.{" "}
             <span style={{ color: "orange" }}>
               Desarrollador full stack y diseñador gráfico digital.
             </span>{" "}
@@ -644,12 +648,16 @@ const Home = () => {
           >
             Me llamo jon nahuel pereyra (si así es como se escribe, jon 😌).
             Empecé en la programación hace poco más de dos años. Actualmente
-            llevo más de un año trabajando en modalidad freelance.
+            trabajo en Gravitad, aceleradora de proyectos.
             <br />
             <br />
             Algunos de mis éxitos incluyen formar el equipo de desarrollo de
             software freelance "4Coders TEAM". Fue la mejor decisión que pude
             haber tomado en cuanto a crecimiento personal y profesional 🚀✨.
+            Actualmente, formo parte del grupo SPARTANS dentro de Gravitad,
+            donde ademas de desarrollar proyectos diversos, creamos nuevas
+            herramientas de gran utilidad para la empresa y la comunidad open
+            source.
             <br />
             <br />
             Como diseñador gráfico, di clases en modalidad virtual para más de
