@@ -8,7 +8,9 @@ import {
   FaNode,
   FaRegSmileWink,
   FaDocker,
+  FaDigitalOcean,
 } from "react-icons/fa";
+import { IoNewspaper } from "react-icons/io5";
 import { TbBriefcase, TbBrandReactNative, TbWorldWww } from "react-icons/tb";
 import { IoLogoNodejs, IoLogoWhatsapp } from "react-icons/io";
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -40,7 +42,6 @@ import {
 } from "react-icons/si";
 import { DiNginx } from "react-icons/di";
 import { Link } from "react-router-dom";
-import clinicaltech from "./assets/clinicaltech.png";
 import proximarket from "../src/assets/proximarket.png";
 import "./home.css";
 
@@ -313,18 +314,25 @@ const Home = () => {
       backgroundColor: "#FB0E35",
       color: "white",
     },
+    {
+      name: "DigitalOcean",
+      documentationUrl: "https://www.digitalocean.com/",
+      Icon: <FaDigitalOcean />,
+      backgroundColor: "white",
+      color: "#3545ff",
+    },
   ];
 
   const eventsData = [
     {
-      date: "02/05/2024 - actualmente → DESARROLLADOR BACK-END EN GRAVITAD",
+      date: "02/05/2024 - actualmente → Team leader Back-end GRAVITAD",
       event:
-        "Empresa ubicada en españa con financiamiento de la Union Europea y el gobierno de españa. Desarrollo de diversos sistemas multiplataforma y planificación/desarrollo de software innovador para uso interno de la empresa.",
+        "Las Palmas, España, Liderar y acompañar tanto en aspecto personal como técnico a un equipo de 24 personas. Desarrollar microservicios y APIs para diversos proyectos, entre ellos, backend para videojuegos en Unity framework, frontends en react, APKs, corrección de código y documentación de proyectos.",
     },
     {
-      date: "15/01/2024 - 05/07/2024 → PROXIMARKET, DESARROLLADOR FULL STACK",
+      date: "02/01/2024 - 02/05/2024 → DESARROLLADOR BACK-END EN GRAVITAD",
       event:
-        "Planificación, diseño y desarrollo de una plataforma con motor de busqueda de productos en tiempo real.",
+        "Empresa ubicada en Las palmas, España con financiamiento de la Union Europea y el gobierno de españa. Desarrollo de diversos sistemas multiplataforma y planificación/desarrollo de software innovador para uso interno de la empresa.",
     },
     {
       date: "25/10/2023 - 05/01/2024 → CLINICALTECH SRL - DESARROLLADOR FULL STACK",
@@ -383,7 +391,7 @@ const Home = () => {
           </div>
           <div className="col-12 col-md-8">
             <button
-              className="rounded-pill p-1 mt-3 border border-danger border-3 fw-semibold"
+              className="rounded-pill p-1 mt-3 border-danger border-3 fw-semibold"
               style={{
                 color: "red",
                 backgroundColor: "aliceblue",
@@ -408,13 +416,13 @@ const Home = () => {
 
         <div className="ms-1">
           <p className="texto text-white text-start mt-5 fs-2">
-            +2 años de experiencia laboral.{" "}
+            +3 años de experiencia laboral.{" "}
             <span style={{ color: "orange" }}>
               Desarrollador full stack y diseñador gráfico digital.
             </span>{" "}
             <span>De Buenos Aires, Argentina.&nbsp;</span>
             <span>
-              Especializado en crear soluciones en tecnología a medida.
+              Especializado en manejo de equipos de desarrollo a gran escala.
             </span>
           </p>
         </div>
@@ -479,30 +487,26 @@ const Home = () => {
           <span className="me-3 mb-2">&lt;/&gt;</span>Proyectos
         </h1>
         <h2 className="fs-3 mt-5" style={{ color: "#ffaa00" }}>
-          CLINICALTECH SRL - Una plataforma autogestionable enfocada a insumos
-          hospitalarios
+          ATENEA - Asistente inteligente orientado al sector turismo
         </h2>
         <p className="PORTFOLIO_FONT_4 mt-3">
-          Este sitio cuenta con un sistema de creación/borrado/editado de
-          secciones, historias, productos, datos de contacto. Además tenemos un
-          relevamiento de información en estadisticas para tener conocimiento
-          del comportamiento del tráfico diario.
+          Este sitio dispone de un asistente inteligente que crea itinerarios de
+          viaje personalizados según tus gustos y preferencias. Además, ofrece
+          recomendaciones de destinos turísticos y alojamientos, proporcionando
+          en la misma respuesta opciones para realizar compras de servicios.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
           {pillProps
             .filter((pill) =>
               [
                 "React.js",
-                "Meteor.js",
-                "Bootstrap",
-                "MongoDB",
-                "AWS",
                 "Typescript",
-                "AfterEffects",
+                "Vite.js",
+                "MongoDB",
                 "Node.js",
-                "Vercel",
                 "Git",
                 "GitHub",
+                "DigitalOcean",
               ].some((tech) => pill.name.includes(tech))
             )
             .map((pill, index) => (
@@ -532,8 +536,8 @@ const Home = () => {
         </div>
         <img
           className="mt-4 rounded-2 img-fluid"
-          src={clinicaltech}
-          alt="clinicaltech"
+          src="https://res.cloudinary.com/dkpotpaaf/image/upload/v1739808656/ypzc3dxfcyhvvfc4q2ya.png"
+          alt="atenea_img"
           width={1000}
         />
         <br />
@@ -542,7 +546,7 @@ const Home = () => {
           style={{ padding: "8px" }}
         >
           <a
-            href="https://clinicaltechsrl.com.ar/"
+            href="https://www.ateneasys.net/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "inherit" }}
@@ -551,6 +555,22 @@ const Home = () => {
               style={{ width: "30px", fontSize: "28px", marginRight: "5px" }}
             />
             Ir al sitio web
+          </a>
+        </button>
+        <button
+          className="mt-3 mb-5 rounded-5 PORTFOLIO_FONT_4 fw-semibold"
+          style={{ padding: "8px" }}
+        >
+          <a
+            href="https://www.europapress.es/andalucia/noticia-gravitad-presenta-plataforma-tecnologica-permite-aumentar-ventas-personalizar-experiencia-viajero-20250129114659.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <IoNewspaper
+              style={{ width: "30px", fontSize: "28px", marginRight: "5px" }}
+            />
+            Articulo sobre atenea
           </a>
         </button>
       </div>
@@ -646,18 +666,22 @@ const Home = () => {
             className="col-sm-12 col-md-8 text-start d-flex align-items-center justify-content-center"
             style={{ lineHeight: "32px" }}
           >
-            Me llamo jon nahuel pereyra (si así es como se escribe, jon 😌).
-            Empecé en la programación hace poco más de dos años. Actualmente
-            trabajo en Gravitad, aceleradora de proyectos.
+            Me llamo jon nahuel pereyra. Empecé en la programación hace poco más
+            de tres años. Actualmente trabajo en Gravitad, aceleradora de
+            proyectos.
             <br />
             <br />
-            Algunos de mis éxitos incluyen formar el equipo de desarrollo de
-            software freelance "4Coders TEAM". Fue la mejor decisión que pude
-            haber tomado en cuanto a crecimiento personal y profesional 🚀✨.
-            Actualmente, formo parte del grupo SPARTANS dentro de Gravitad,
-            donde ademas de desarrollar proyectos diversos, creamos nuevas
-            herramientas de gran utilidad para la empresa y la comunidad open
-            source.
+            Como director del departamento de backend, algunos de mis logros
+            son: <br /> <br /> ✅ Fundar las divisiones de backend (web, videojuegos, APIs y
+            servicios de terceros, sistemas internos, blockchain,
+            comunicaciones, sistemas de inventario, QA testing).
+            <br />
+            ✅ Crear herramientas y dar de alta microservicios necesarios para
+            cumplir con los desafíos técnicos. <br /> ✅ Asignar líderes de equipo por
+            division. <br /> ✅ Confeccionar la version de backend para blockchain.  <br />✅
+            Confeccionar la version 3.0 de backend. <br /> ✅ Fundar las jornadas de
+            capacitación para el equipo. <br /> ✅ Impulsar el uso de clickUp para la
+            gestión de proyectos.
             <br />
             <br />
             Como diseñador gráfico, di clases en modalidad virtual para más de
