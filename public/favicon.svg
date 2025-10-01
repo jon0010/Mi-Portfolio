@@ -1,0 +1,20 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradiente oficial de useTeam -->
+  <defs>
+    <linearGradient id="useTeamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Letra U sólida con bordes redondeados -->
+  <path
+    d="M8 6 L8 18 C8 22.418 11.582 26 16 26 C20.418 26 24 22.418 24 18 L24 6"
+    stroke="url(#useTeamGradient)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>
