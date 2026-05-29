@@ -81,7 +81,7 @@ const Footer = () => {
                     Jon Nahuel Pereyra
                   </h5>
                   <small style={{ color: isDark ? "#cbd5e1" : "#64748b" }}>
-                    Co-fundador & Head of Technology
+                    COO & Co-fundador · useTeam
                   </small>
                 </div>
               </div>
@@ -89,8 +89,9 @@ const Footer = () => {
                 className="PORTFOLIO_FONT_4 small"
                 style={{ color: isDark ? "#cbd5e1" : "#475569" }}
               >
-                Transformando ideas en productos digitales de alto impacto con
-                tecnologías modernas y agentes de inteligentes personalizados.
+                Soluciones agénticas avanzadas y experiencias inmersivas desde
+                Canarias. Partner tecnológico de Gravitad y Cognitfy, con +200
+                proyectos entregados en España y Portugal.
               </p>
             </motion.div>
 
@@ -137,7 +138,7 @@ const Footer = () => {
                   className="small"
                   style={{ color: isDark ? "#cbd5e1" : "#475569" }}
                 >
-                  📍 Buenos Aires, Argentina
+                  📍 Buenos Aires, Argentina · Canarias, España
                 </span>
               </div>
             </motion.div>

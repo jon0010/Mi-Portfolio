@@ -109,7 +109,7 @@ const Navbar2 = () => {
                       fontWeight: "400",
                     }}
                   >
-                    Head of Technology
+                    COO & Co-fundador · useTeam
                   </motion.div>
                 </div>
               </motion.div>

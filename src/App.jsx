@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
+import CursorFlair from "./components/cursorFlair/CursorFlair";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
@@ -21,7 +22,8 @@ const AppContent = () => {
   }, [isDark]);
 
   return (
-    <div className="App" style={{ paddingTop: "100px" }}>
+    <div className="App">
+      <CursorFlair />
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes>
